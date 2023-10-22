@@ -1,0 +1,7 @@
+{
+  "name": "regris",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

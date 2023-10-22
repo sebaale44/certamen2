@@ -1,0 +1,41 @@
+<app-header title=" REGRISTRAPP" ></app-header>
+
+<ion-content class="theme-gray">
+  <ion-grid class="d-flex ion-align-items-center ion-justify-content-center w-100 h-100">
+    <ion-card class="">
+      <ion-row>
+        <ion-col class="ion-text-center ion-padding-top">
+        </ion-col>
+      </ion-row>
+      
+      <ion-card-header>
+        <ion-card-title class="ion-text-center login-tittle"><h1><strong>RegisTr</strong>aap</h1></ion-card-title>  
+      </ion-card-header>
+    
+
+      <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <form #form="ngForm">
+              <ion-list>
+                <ion-button class="ion-margin-top" 
+                            expand="block"
+                            type="submit"
+                            [routerLink]="['/auth']">Ingresar como Alumno
+                </ion-button>
+
+                <ion-button class="ion-margin-top" 
+                            expand="block"
+                            type="submit"
+                            [routerLink]="['/auth']">Ingresar como Profesor
+                </ion-button>
+                
+              </ion-list>
+            </form>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+
+    </ion-card>
+  </ion-grid>
+</ion-content>
