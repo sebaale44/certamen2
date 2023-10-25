@@ -1,4 +1,4 @@
- <app-header title=" REGRISTRAPP" ></app-header>
+ <app-header backbutton="/home" title=" REGRISTRAPP" ></app-header>
 <ion-content >
 
   <div class="d-flex-center">
@@ -6,7 +6,7 @@
 <form [formGroup]="form" class="auth-form" (ngSubmit)="submit()" (keypress.enter)="submit()">
 
   <ion-header >
-      <h1><strong>RegisTr</strong>aap</h1>
+      <h1><strong>Login</strong></h1>
   </ion-header>
 
       <app-custom-input icon="mail-outline"
@@ -32,18 +32,16 @@
 
                         <p routerLink="olvido-contrasena" class="ion-text-end">olvidaste tu contraseña?</p>
                         
-                        <ion-button  expand="block"  mode="ios" class="submit" [disabled]="form.invalid ">
+                        <ion-button  expand="block"  mode="ios" class="submit" type="submit" [disabled]="form.invalid" >
                           Ingresar
                         </ion-button>
 
+                        <ion-button class="ion-margin-top" routerLink="registrar-usuario" expand="block"  mode="ios" fill="outline">
+                          Registarte
+                          <ion-icon slot="end" name="person-add.outline"></ion-icon>
+                        </ion-button>
+
                         
-    </form>
-
-    
-  </div>  
-
-
-
-
-  
+    </form>   
+  </div>   
 </ion-content>

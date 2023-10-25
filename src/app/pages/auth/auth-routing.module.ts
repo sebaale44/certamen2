@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'olvido-contrasena',
     loadChildren: () => import('./olvido-contrasena/olvido-contrasena.module').then( m => m.OlvidoContrasenaPageModule)
+  },
+  {
+    path: 'registrar-usuario',
+    loadChildren: () => import('./registrar-usuario/registrar-usuario.module').then( m => m.RegistrarUsuarioPageModule)
   }
 ];
 
