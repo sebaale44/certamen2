@@ -36,7 +36,7 @@ export class AuthPage implements OnInit {
 
 //====================contraseña o usuario invalida
         this.utilSvc.presentToast({
-          message: error.message,
+          message: 'contraseña o correo invalida',
           duration: 2500,
           color: 'primary',
           position: 'middle',
