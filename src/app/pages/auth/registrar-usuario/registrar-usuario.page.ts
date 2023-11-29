@@ -72,7 +72,7 @@ export class RegistrarUsuarioPage implements OnInit {
       this.FirebaseSvc.setdocument(path, this.form.value).then(async res => {
        
         this.utilSvc.saveinlocalstorage('user', this.form.value);
-        this.utilSvc.routertLink('/main/menu-profe');
+        this.utilSvc.routertLink('/auth');
         this.form.reset();
 
       }).catch(error =>{
