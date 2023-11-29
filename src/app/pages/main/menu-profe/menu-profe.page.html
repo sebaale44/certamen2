@@ -8,10 +8,16 @@
 <ion-content [fullscreen]="true">
   <ion-button (click)="signOut()"  class="ion-margin-top">
         Cerrar sesion
-  </ion-button>
+  </ion-button> 
+
+<ion-text>
+  <h1>Generar QR</h1> 
+
+</ion-text >
+<input type="text" [(ngModel)]="texto">
+<br><br>
+<qrcode [qrdata]="texto" [width]="400"></qrcode>
 
 
-  <ion-button  class="ion-margin-top">
-    Pasar Lista
-</ion-button>
+
 </ion-content>

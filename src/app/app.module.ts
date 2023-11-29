@@ -13,6 +13,10 @@ import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environment'; 
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import * as firebase from 'firebase/app';
+import { QRCodeModule } from 'angularx-qrcode';
+
+
+
     
       // Initialize Firebase
       export const  firebaseConfig = {
@@ -34,7 +38,7 @@ import * as firebase from 'firebase/app';
   imports: [BrowserModule, IonicModule.forRoot(), 
             AppRoutingModule,
             AngularFireModule.initializeApp(environment.firebaseConfig),
-            AngularFirestoreModule
+            AngularFirestoreModule,QRCodeModule
             ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

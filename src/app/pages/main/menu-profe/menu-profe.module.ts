@@ -8,13 +8,13 @@ import { MenuProfePageRoutingModule } from './menu-profe-routing.module';
 
 import { MenuProfePage } from './menu-profe.page';
 import { SharedModule } from 'src/app/shared/shared.module';
-
+import { QRCodeModule } from 'angularx-qrcode';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MenuProfePageRoutingModule,SharedModule,SharedModule
+    MenuProfePageRoutingModule,SharedModule,SharedModule,QRCodeModule
   ],
   declarations: [MenuProfePage]
 })
